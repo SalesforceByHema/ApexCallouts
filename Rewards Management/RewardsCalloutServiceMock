@@ -1,6 +1,6 @@
 @isTest
 global class RewardsCalloutServiceMock implements HttpCalloutMock {
-    global HTTPResponse respond(HTTPRequest request){
+    global HTTPResponse respond(HTTPRequest request){   //by default respond method will send the response to the test class
         
         HttpResponse res=new HttpResponse();
         res.setHeader('Content-Type','application/json');
